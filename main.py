@@ -1,7 +1,8 @@
-import frontend, backend
+import tkinter as tk
+import backend, frontend
 
-def main():
-    print("Hello from main.py")
-    frontend.main()
-if __name__ == '__main__':
-    main()
+if __name__ == "__main__":
+    root = tk.Tk()
+    
+    frontend.GUI(root)
+    root.mainloop()
